@@ -1,0 +1,228 @@
+/* ===== استدعاء ملفات ذات علاقة ===== */
+@import url(../fonts/font-ar.css);
+@import url(./animation/animation.css);
+@import url(./animation/animation2.css);
+
+/* ===== الالوان المستخدمة:  ===== 
+#1A202C   #2D3848   #3A4556   
+#99e5b3   #ffdd00   #ffffff
+*/
+body {
+  background-color: #1a202c;
+  font-family: "Tajawal";
+}
+
+.bg-dark {
+  /* ===== لون الخلفية الناف بار ===== */
+  background-color: #2d3848 !important;
+}
+.navbar-brand {
+  /* ===== لون البراند ===== */
+  color: #99e5b3 !important;
+}
+
+/* ===== انيميشن لـ اسم الموقع ===== */
+.navbar .animation {
+  animation-duration: 1.5s;
+  animation-name: animation-rotatey;
+}
+/* ===== بداية دروب منيو ===== */
+.dropdown-menu {
+  background-color: #2d3848;
+  border-radius: 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 5px solid #99e5b3;
+}
+.dropdown-menu .dropdown-item {
+  color: #fff;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: #3a4556;
+}
+.dropdown-toggle::after {
+  /* ===== لون علامة الاسهم في دروب ===== */
+  color: #99e5b3;
+}
+/* ===== نهاية دروب منيو ===== */
+
+/* ===== بداية اخفاء حدود ايقونة فتح دروب ===== */
+.navbar-dark .navbar-toggler {
+  border: none !important;
+}
+.navbar-dark .navbar-toggler:focus {
+  outline: none;
+}
+/* ===== نهاية اخفاء حدود ايقونة فتح دروب ===== */
+
+/* ===== كلاس خاص بلون دارك ===== */
+.back-dark {
+  background-color: #3a4556;
+  color: #fff;
+}
+/* ===== بداية ناف بار 2 ===== */
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-underline .nav-link {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+.nav-underline .nav-link:hover {
+  color: #99e5b3;
+}
+
+.nav-underline .active {
+  font-weight: 500;
+  color: #0cb9c1;
+}
+
+/* ===== نهاية ناف بار 2 ===== */
+
+/* ===== nav-bottom بداية ===== */
+.nav-bottom {
+  width: 100%;
+  background-color: #3a4556;
+  height: 50px;
+  text-align: center;
+  display: flexbox;
+  border-right: 2px solid #99e5b3;
+  color: #99e5b3;
+}
+.nav-bottom i,
+.nav-bottom .discount,
+.nav-bottom .clo {
+  color: #ffdd00;
+  font-size: 20px;
+}
+.nav-bottom .animation-discount {
+  animation: animation-discount 4s infinite;
+}
+
+/* ===== nav-bottom نهاية =====  */
+
+/* ===== color-button بداية =====  */
+.color-button {
+  color: #99e5b3;
+  background-color: none;
+  border: none;
+}
+.color-button:hover,
+.color-button:focus,
+.color-button:active {
+  color: #000 !important;
+  background-color: #99e5b3 !important;
+}
+/* ===== color-button نهاية =====  */
+
+/* ===== color-search  نهاية =====  */
+.color-search {
+  background-color: #3a4556;
+  color: #fff !important;
+  border: none;
+}
+.color-search:focus,
+.color-search:hover,
+.color-search:active {
+  background-color: rgba(0, 0, 0, 0);
+  color: #99e5b3 !important;
+  border-right: solid #99e5b3 3px;
+}
+/* ===== color-search  نهاية =====  */
+
+/* ===== pay-button  بداية =====  */
+.pay-button {
+  background-color: #99e5b3;
+  color: #fff;
+  transition: 0.5s ease all;
+}
+.pay-button:hover,
+.pay-button:focus,
+.pay-button:active {
+  background-color: #fff;
+  color: #99e5b3;
+  transform: scale(1.1);
+  transition: 0.5s ease all;
+  border-right: 4px solid #99e5b3;
+}
+/* ===== pay-button  نهاية =====  */
+
+/* ===== view-button  نهاية =====  */
+.view-button {
+  background-color: #0cb9c1;
+  color: #fff;
+  transition: 0.5s ease all;
+}
+.view-button:hover,
+.view-button:focus,
+.view-button:active {
+  background-color: #fff;
+  color: #0cb9c1;
+  transform: scale(1.1);
+  transition: 0.5s ease all;
+  border-left: 4px solid #0cb9c1;
+}
+/* ===== view-button  نهاية =====  */
+
+/* ===== المنتج  بداية =====  */
+.title-pro {
+  /*خصائص العنوان في حاوية منتج  */
+  color: #fff;
+  margin: 10px;
+}
+.title-pro i {
+  /*لون علامة في العنوان  */
+  color: #0cb9c1;
+}
+.card-border {
+  /*انحناء على الحاوية الحاملة لجميع المنتجات الدف الكبير */
+  border-radius: 10px;
+}
+.card-bor-r,
+.img-bor-r {
+  /* انحناء على الصورة المنتج + البودي كارد */
+  border-radius: 10px 10px 0 0;
+  animation: prod 1.9s;
+}
+
+.prod {
+  /* انميشن على الصورة المنتج  */
+  transition: 0.5s ease all;
+}
+.prod:hover {
+  /* انميشن عند المرور على صورة المنتج*/
+  transform: scale(1.02);
+  transition: 0.5s ease all;
+  border-radius: 0 0;
+  box-shadow: 0 0 20px -5px #fff;
+}
+.non-bor {
+  /* كلاس خاص حدذف الحدود */
+  border: none;
+}
+/* ===== المنتج  نهاية =====  */
+footer {
+  color: #fff;
+}

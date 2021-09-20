@@ -1,0 +1,36 @@
+@keyframes animation-rotatey {
+  0% {
+    transform: rotatey(0deg);
+  }
+  50% {
+    transform: rotatey(180deg);
+  }
+  100% {
+    transform: rotatey(0deg);
+  }
+}
+
+@keyframes animation-discount {
+  0% {
+    transform: rotatey(0deg);
+  }
+  50% {
+    transform: rotatey(180deg);
+  }
+  100% {
+    transform: rotatey(0deg);
+  }
+}
+
+@keyframes prod {
+  0% {
+    transform: rotatey(0deg);
+  }
+  50% {
+    transform: rotatey(90deg);
+  }
+
+  100% {
+    transform: rotatey(0deg);
+  }
+}
